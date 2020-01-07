@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /classes/ecen4303F17/project_F17/inv/calibre
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT inv.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /classes/ecen4303F17/project_F17/inv/calibre/./../sue/inv.sp
+lvs_LvsOutFile RULES_FILE /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_
+lvs_LvsRunTimes 1508368619 1508368619

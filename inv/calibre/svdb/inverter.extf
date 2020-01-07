@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1508368619 1508368619
+lvs_ExtOutFile RUNDIR /classes/ecen4303F17/project_F17/inv/calibre
+lvs_ExtOutFile RULES_FILE /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp
+lvs_ExtOutFile EXTRACTION_REPORT inv.lvs.report.ext

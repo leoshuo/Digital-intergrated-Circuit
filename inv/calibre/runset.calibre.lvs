@@ -1,0 +1,17 @@
+*lvsRulesFile: /classes/ecen4303F17/calibre/calibreLVS_scn3me_subm.rul
+*lvsRunDir: .
+*lvsLayoutPaths: ../magic/inverter.gds
+*lvsLayoutPrimary: inverter
+*lvsSourcePath: ../sue/inv.sp
+*lvsSourcePrimary: inv
+*lvsSourceSystem: SPICE
+*lvsSpiceFile: extracted.sp
+*lvsPowerNames: vdd 
+*lvsGroundNames: gnd
+*lvsIgnorePorts: 1
+*lvsERCDatabase: inv.erc.db
+*lvsERCSummaryFile: inv.erc.summary
+*lvsReportFile: inv.lvs.report
+*lvsMaskDBFile: inv.maskdb
+*cmnFDILayerMapFile: /classes/ecen4303F17/calibre/layer.map
+*cmnFDIUseLayerMap: 1

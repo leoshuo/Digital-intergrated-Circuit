@@ -1,0 +1,11 @@
+*drcRulesFile: ./calibreDRC_scn3me_subm.rul
+*drcRunDir: .
+*drcLayoutPaths: ./inv.gds
+*drcLayoutPrimary: inv
+*drcLayoutSystem: GDSII
+*drcResultsformat: ASCII
+*drcResultsFile: inv.db
+*drcSummaryFile: inv.drc.summary
+*cmnFDILayerMapFile: ./layer.map
+*cmnFDIUseLayerMap: 1
+

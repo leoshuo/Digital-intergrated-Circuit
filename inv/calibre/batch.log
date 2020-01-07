@@ -1,0 +1,975 @@
+//  Calibre Interactive - LVS  v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
+//
+//        Copyright Mentor Graphics Corporation 1996-2017
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on Linux rivendell.ecen.okstate.edu 2.6.32-696.10.1.el6.x86_64 #1 SMP Wed Jul 19 08:18:21 EDT 2017 x86_64
+//  64 bit virtual addressing enabled
+//
+//  Starting time: Wed Oct 18 18:16:58 2017
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+*lvsPowerNames: vdd
+*lvsMaskDBFile: inv.maskdb
+*lvsLayoutPrimary: inverter
+*lvsSpiceFile: extracted.sp
+*lvsIgnorePorts: 1
+*lvsSourcePath: ../sue/inv.sp
+*lvsSourceSystem: SPICE
+*cmnFDILayerMapFile: /classes/ecen4303F17/calibre/layer.map
+*lvsERCDatabase: inv.erc.db
+*lvsERCSummaryFile: inv.erc.summary
+*lvsRulesFile: /classes/ecen4303F17/calibre/calibreLVS_scn3me_subm.rul
+*lvsGroundNames: gnd
+*cmnFDIUseLayerMap: 1
+*lvsReportFile: inv.lvs.report
+*lvsRunDir: .
+*lvsSourcePrimary: inv
+*lvsLayoutPaths: ../magic/inverter.gds
+Verifying the source netlist is complete before starting the run
+
+MGC_HOME = /programs/mentor/aoi_cal_2016.4_38.25
+$MGC_HOME/bin/calibre -spice /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp -lvs -hier -nowait /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_
+
+//  Calibre v2016.4_38.25    Tue Jan 3 14:54:06 PST 2017
+//  Calibre Utility Library   v0-2_8-2016-2    Tue Feb 9 23:45:01 PST 2016
+//  Litho Libraries v2016.4_38.25  Tue Jan 3 14:54:06 PST 2017
+//
+//        Copyright Mentor Graphics Corporation 1996-2017
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on Linux rivendell.ecen.okstate.edu 2.6.32-696.10.1.el6.x86_64 #1 SMP Wed Jul 19 08:18:21 EDT 2017 x86_64 glibc 2.12/NPTL 2.12
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       132251136 kB
+//  MemFree:        27003472 kB
+//  Buffers:         4014276 kB
+//  Cached:         76694512 kB
+//  SwapCached:            0 kB
+//  Active:         81100172 kB
+//  Inactive:       13764236 kB
+//  Active(anon):   13499792 kB
+//  Inactive(anon):  1093500 kB
+//  Active(file):   67600380 kB
+//  Inactive(file): 12670736 kB
+//  Unevictable:           0 kB
+//  Mlocked:               0 kB
+//  SwapTotal:       4194300 kB
+//  SwapFree:        4193880 kB
+//  Dirty:              1600 kB
+//  Writeback:             4 kB
+//  AnonPages:      14152424 kB
+//  Mapped:           731084 kB
+//  Shmem:            437680 kB
+//  Slab:            9032844 kB
+//  SReclaimable:    8252036 kB
+//  SUnreclaim:       780808 kB
+//  KernelStack:       35408 kB
+//  PageTables:       468532 kB
+//  NFS_Unstable:          0 kB
+//  Bounce:                0 kB
+//  WritebackTmp:          0 kB
+//  CommitLimit:    70319868 kB
+//  Committed_AS:   35025016 kB
+//  VmallocTotal:   34359738367 kB
+//  VmallocUsed:      496308 kB
+//  VmallocChunk:   34291658540 kB
+//  HardwareCorrupted:     0 kB
+//  AnonHugePages:  11032576 kB
+//  HugePages_Total:       0
+//  HugePages_Free:        0
+//  HugePages_Rsvd:        0
+//  HugePages_Surp:        0
+//  Hugepagesize:       2048 kB
+//  DirectMap4k:        7844 kB
+//  DirectMap2M:     3102720 kB
+//  DirectMap1G:    131072000 kB
+//
+//  User limits:
+//
+//  Data size: unlimited
+//  RSS: unlimited
+//  Stack size: 82944000 kB
+//  Max user processes: 1024
+//  VM: unlimited
+//
+//  Processor Intel(R) Xeon(R) CPU E5-4617 0 @ 2.90GHz [062d7]
+//  CPU Info: Cores = 12, SMT capable but is disabled
+//  Max file descriptors: 1024
+//  64 bit virtual addressing enabled
+//  Running aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre -spice /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp -lvs -hier -nowait /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_
+//  Process ID: 98696
+//
+//  Starting time: Wed Oct 18 18:16:59 2017
+//
+//  Running on 1 CPU (pending licensing) 
+//
+//
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----          STANDARD VERIFICATION RULE FILE COMPILATION MODULE          -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- RULE FILE = /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_
+
+//
+//  Rule file generated on Wed Oct 18 18:16:59 CDT 2017
+//     by Calibre Interactive - LVS (v2016.4_38.25)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "/classes/ecen4303F17/project_F17/inv/calibre/./../magic/inverter.gds"
+LAYOUT PRIMARY "inverter"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "/classes/ecen4303F17/project_F17/inv/calibre/./../sue/inv.sp"
+SOURCE PRIMARY "inv"
+SOURCE SYSTEM SPICE
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "inv.lvs.report"
+
+LVS REPORT OPTION NONE
+LVS FILTER UNUSED OPTION NONE SOURCE
+LVS FILTER UNUSED OPTION NONE LAYOUT
+LVS REPORT MAXIMUM 50
+LVS POWER NAME
+	"vdd"
+
+LVS GROUND NAME
+	"gnd"
+
+
+LVS RECOGNIZE GATES ALL
+
+
+LVS ABORT ON SOFTCHK NO
+LVS ABORT ON SUPPLY ERROR YES
+LVS IGNORE PORTS YES
+LVS SHOW SEED PROMOTIONS NO
+LVS SHOW SEED PROMOTIONS MAXIMUM 50
+
+LVS ISOLATE SHORTS NO
+
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+LVS EXECUTE ERC YES
+ERC RESULTS DATABASE "inv.erc.db"
+ERC SUMMARY REPORT "inv.erc.summary" REPLACE HIER
+ERC CELL NAME YES CELL SPACE XFORM
+ERC MAXIMUM RESULTS 1000
+ERC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+
+INCLUDE "/classes/ecen4303F17/calibre/calibreLVS_scn3me_subm.rul"
+
+
+
+--- STANDARD VERIFICATION RULE FILE COMPILATION MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 1/3/3
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv/pvt/calibre  -spice /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp -lvs -hier -nowait /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_'
+CALIBRE_HOME=/programs/mentor/aoi_cal_2016.4_38.25
+CALIBRE_INITIAL_CMD_LINE='/programs/mentor/aoi_cal_2016.4_38.25/bin/calibre -spice /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp -lvs -hier -nowait /classes/ecen4303F17/project_F17/inv/calibre/./_calibreLVS_scn3me_subm.rul_'
+CALIBRE_READDB_LD_LIBRARY_PATH=/programs/mentor/aoi_cal_2016.4_38.25/shared/pkgs/icv/tools/calibre_client/lib/64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/calibre_base/lib64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv_lib/lib64:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/icv_qt_comp/plugins:/programs/mentor/aoi_cal_2016.4_38.25/pkgs/umc_libs/lib/lnx32:/programs/mentor/aoi_cal_2016.4_38.25/shared/pkgs/icv_oa/22.41.004/lib/linux_rhel40_gcc44x_64/opt:/usr/lib:/usr/X11R6/lib:/lib:/import/comet1/lib:/usr/local/lib
+CALIBRE_SKIP_OS_CHECKS=
+CALIBRE_SSE3_SUPPORTED=1
+
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - Wed Oct 18 18:16:59 2017
+
+//  Applying licensing policy...
+//  calibrehlvs license acquired.
+//  calibrelvs license acquired.
+
+//  Licensed Products
+//  -----------------
+//  Base products running on 1 core:
+//  - LVS (Hierarchical)
+//  - LVS Extraction
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                   CALIBRE LAYOUT DATA INPUT MODULE                   -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- LAYOUT SYSTEM = GDS
+--- LAYOUT MAGNIFICATION = 1
+
+--------------------------------------------------------------------------------
+-----                     GDS FILE SUMMARY INFORMATION                     -----
+--------------------------------------------------------------------------------
+
+GDS FILENAME:        /classes/ecen4303F17/project_F17/inv/calibre/./../magic/inverter.gds
+GDS VERSION:         3
+LIBRARY NAME:        inverter
+LAST MODIFIED:       ON 2002/2/17 AT 17:48:44
+LAST ACCESSED:       ON 2017/10/18 AT 18:14:17
+DATABASE PRECISION:  0.001 user units per database unit
+PHYSICAL PRECISION:  1e-09 meters per database unit
+MAGNIFICATION:       1
+
+--------------------------------------------------------------------------------
+-----                 GDS INPUT DATA FOR INDIVIDUAL CELLS                  -----
+--------------------------------------------------------------------------------
+     CELL NAME                  PLACEMENTS   ARRAYS   POLYGONS    PATHS    TEXTS
+--------------------------------------------------------------------------------
+inverter                                 0        0         42        0        4
+
+NOTE: UNUSED geometric data is present on the following layer/datatype pairs:
+
+NOTE: USED geometric data is present on the following layer/datatype pairs:
+    SIMPLE LAYER = 41
+        LAYER = 41 DATATYPE = 0
+    SIMPLE LAYER = 42
+        LAYER = 42 DATATYPE = 0
+    SIMPLE LAYER = 43
+        LAYER = 43 DATATYPE = 0
+    SIMPLE LAYER = 44
+        LAYER = 44 DATATYPE = 0
+    SIMPLE LAYER = 45
+        LAYER = 45 DATATYPE = 0
+    SIMPLE LAYER = 46
+        LAYER = 46 DATATYPE = 0
+    SIMPLE LAYER = 47
+        LAYER = 47 DATATYPE = 0
+    SIMPLE LAYER = 48
+        LAYER = 48 DATATYPE = 0
+    SIMPLE LAYER = 49
+        LAYER = 49 DATATYPE = 0
+
+NOTE: The following required simple layers are EMPTY:
+    25
+    50
+    51
+    61
+    62
+
+--- LAYOUT DATABASE CONSTRUCTOR COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/4/67
+
+CONSTRUCTING HIERARCHICAL DATABASE
+    COPYING LAYOUT DATABASE
+    PROCESSING TEXT
+    ELIMINATING DUPLICATE TEXT
+    ELIMINATING EMPTY CELLS
+    COMPUTING RECTANGULAR EXTENTS
+    ELIMINATING DUPLICATE PLACEMENTS
+    IDENTIFYING TOP LAYER CELLS
+    IDENTIFYING ADDITIONAL TOP LAYER CELLS
+    IDENTIFYING VERY SMALL CELLS
+    CHECKING ACUTE/SKEW/ANGLED/OFFGRID
+    FLATTENING VERY SMALL CELL PLACEMENTS
+    FLATTENING SELECTED TOP LAYER CELL PLACEMENTS
+    FLATTENING SELECTED LAYERS
+    EXPANDING UNIQUE ICV PLACEMENTS
+    EXPANDING LARGE TOP LAYER CELL PLACEMENTS
+    COMPUTING RECTILINEAR EXTENTS
+    SORTING PLACEMENTS
+    ELIMINATING DUPLICATE PLACEMENTS
+    EXPANDING UNIQUE TRANSPARENT CELL PLACEMENTS
+    EXPANDING UNIQUE LIGHT-WEIGHT CELL PLACEMENTS
+    EXPANDING TRIVIAL CELL PLACEMENTS
+    EXPANDING VERY SPARSE ARRAY PLACEMENTS
+    EXPANDING LARGE CELL ARRAY PLACEMENTS
+    EXPANDING VERY SPARSE CELL PLACEMENTS
+    ELIMINATING DUPLICATE SUPER-HIERARCHICAL PLACEMENTS
+    PROCESSING LAYOUT BLOAT LAYERS (auto-detected)
+    PROCESSING LARGE CELL EXTENT-BLOATING LAYERS
+    EXPANDING DENSE OVERLAPS
+    EXPANDING UNIQUE META-CELL PLACEMENTS
+    IDENTIFYING MULTI-CORE CELLS
+    INJECTING HIERARCHY
+    COMPUTING RECTANGULAR EXTENTS
+    SORTING PLACEMENTS
+    PUSHING VERY SMALL CELL PLACEMENTS
+    PUSHING TOP LAYER CELL PLACEMENTS
+    FLATTENING VERY SMALL CELL PLACEMENTS
+    FLATTENING SMALL TOP LAYER CELL PLACEMENTS
+    COMPUTING CELL-TO-WORLD TRANSFORMS
+    SORTING PLACEMENTS
+    PACKING HIERARCHY
+    COMPUTING PLACEMENT OVERLAP RECORDS
+    COMPUTING CELL OVERLAP AREAS
+    INTERSECTING PLACEMENTS AND OVERLAP AREAS
+HIERARCHICAL DATABASE CONSTRUCTOR COMPLETE.
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67
+
+--------------------------------------------------------------------------------
+-----               TEXT OBJECTS FOR CONNECTIVITY EXTRACTION               -----
+--------------------------------------------------------------------------------
+
+A (-0.6,6.6) 49 inverter                gnd (1.8,0.6) 49 inverter
+vdd (2.1,24) 49 inverter                Y (3.6,7.8) 49 inverter
+
+--------------------------------------------------------------------------------
+-----                TEXT OBJECTS FOR WITH TEXT OPERATIONS                 -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----               TEXT OBJECTS FOR EXPAND TEXT OPERATIONS                -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----                  TEXT OBJECTS FOR CAPI OPERATIONS                    -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----                                PORTS                                 -----
+--------------------------------------------------------------------------------
+
+A (-0.6,6.6) 49 inverter                gnd (1.8,0.6) 49 inverter
+vdd (2.1,24) 49 inverter                Y (3.6,7.8) 49 inverter
+
+--------------------------------------------------------------------------------
+-----             LAYER READ SUMMARY (SIMPLE LAYER GEOMETRIES)             -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER      GEOMETRIES                                                    
+--------------------------------------------------------------------------------
+
+  25                     0
+  41                     2
+  42                     1
+  43                     6
+  44                     3
+  45                     3
+  46                     3
+  47                     1
+  48                    16
+  49                     7
+  50                     0
+  51                     0
+  61                     0
+  62                     0
+
+--------------------------------------------------------------------------------
+-----            LAYER READ SUMMARY (ORIGINAL LAYER GEOMETRIES)            -----
+--------------------------------------------------------------------------------
+ORIGINAL LAYER       INITIAL GEOMETRIES                 FINAL GEOMETRIES        
+--------------------------------------------------------------------------------
+
+pimplant                   3 (3)                            3 (3)               
+active                     6 (6)                            6 (6)               
+nimplant                   3 (3)                            3 (3)               
+poly                       3 (3)                            3 (3)               
+pwell                      2 (2)                            2 (2)               
+nwell                      1 (1)                            1 (1)               
+via1                       0 (0)                            0 (0)               
+metal1                     7 (7)                            7 (7)               
+metal2                     0 (0)                            0 (0)               
+via2                       0 (0)                            0 (0)               
+metal3                     0 (0)                            0 (0)               
+contact                    0 (0)                            0 (0)               
+active_contact            16 (16)                          16 (16)              
+poly_contact               1 (1)                            1 (1)               
+
+--------------------------------------------------------------------------------
+-----         LAYER READ SUMMARY (TEXT FOR CONNECTIVITY EXTRACTION)        -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+  49                       4 (4)               
+
+--------------------------------------------------------------------------------
+-----          LAYER READ SUMMARY (TEXT FOR WITH TEXT OPERATIONS)          -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----         LAYER READ SUMMARY (TEXT FOR EXPAND TEXT OPERATIONS)         -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----            LAYER READ SUMMARY (TEXT FOR CAPI OPERATIONS)             -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----                      LAYER READ SUMMARY (PORTS)                      -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+  49                       4 (4)               
+
+--------------------------------------------------------------------------------
+-----                      CELL AND PLACEMENT SUMMARY                      -----
+--------------------------------------------------------------------------------
+CELL TYPE                 CELLS           PLACEMENTS       FLAT PLACEMENTS      
+--------------------------------------------------------------------------------
+
+USER                          1                    0                     0
+ VERY SMALL                   0                    0                     0
+ TOP LAYER                    0                    0                     0
+  VERY SMALL                  0                    0                     0
+PSEUDO                        0                    0                     0
+TOTAL                         1                    0                     0
+
+--------------------------------------------------------------------------------
+-----                   LAYOUT DATA INPUT MODULE SUMMARY                   -----
+--------------------------------------------------------------------------------
+
+--- TOTAL GEOMETRIES READ FROM SIMPLE LAYERS = 42
+--- TOTAL GEOMETRIES READ FROM ORIGINAL LAYERS = 42 (42)
+--- TOTAL GEOMETRIES WRITTEN TO ORIGINAL LAYERS = 42 (42)
+--- LVHEAP = 2/5/67
+--- DATABASE EXTENT = [ -1.5 , -0.9 ] -> [ 6.3 , 25.5 ]
+--- GEOMETRIC DEPTH = ALL
+--- TEXT DEPTH FOR CONNECTIVITY EXTRACTION = PRIMARY
+--- TOTAL TEXT OBJECTS FOR CONNECTIVITY EXTRACTION = 4 (4)
+--- TOTAL TEXT OBJECTS FOR WITH TEXT OPERATIONS = 0 (0)
+--- TOTAL TEXT OBJECTS FOR EXPAND TEXT OPERATIONS = 0 (0)
+--- TOTAL TEXT OBJECTS FOR CAPI OPERATIONS = 0 (0)
+--- TOTAL PORT OBJECTS = 4 (4)
+--- GEOMETRY FLAGGING = ACUTE (NO)  SKEW (NO)  ANGLED (NO)  OFFGRID (NO)
+                        NONSIMPLE POLYGON (NO)  NONSIMPLE PATH (NO)
+--- PRIMARY CELL = inverter
+--- EXCLUDED CELLS =
+--- LAYOUT BASE LAYER = (NOT SPECIFIED)
+--- LAYOUT TOP LAYER = (NOT SPECIFIED)
+
+--- CALIBRE LAYOUT DATA INPUT MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----      CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR - EXECUTIVE MODULE      -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+via1 = OR via1
+--------------
+via1 (HIER TYP=1 CFG=3 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 1 OF 29  ELAPSED TIME = 0
+
+Original Layer via1 DELETED -- LVHEAP = 2/5/67
+
+metal1 = OR metal1
+------------------
+metal1 (HIER TYP=1 CFG=3 HGC=4 FGC=4 HEC=26 FEC=26 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 2 OF 29  ELAPSED TIME = 0
+
+Original Layer metal1 DELETED -- LVHEAP = 2/5/67
+
+metal2 = OR metal2
+------------------
+metal2 (HIER TYP=1 CFG=3 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 3 OF 29  ELAPSED TIME = 0
+
+Original Layer metal2 DELETED -- LVHEAP = 2/5/67
+
+via2 = OR via2
+--------------
+via2 (HIER TYP=1 CFG=3 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 4 OF 29  ELAPSED TIME = 0
+
+Original Layer via2 DELETED -- LVHEAP = 2/5/67
+
+metal3 = OR metal3
+------------------
+metal3 (HIER TYP=1 CFG=3 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 5 OF 29  ELAPSED TIME = 0
+
+Original Layer metal3 DELETED -- LVHEAP = 2/5/67
+
+contact = OR contact
+--------------------
+contact (HIER TYP=1 CFG=3 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 6 OF 29  ELAPSED TIME = 0
+
+Original Layer contact DELETED -- LVHEAP = 2/5/67
+
+poly = OR poly
+--------------
+poly (HIER TYP=1 CFG=3 HGC=1 FGC=1 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 7 OF 29  ELAPSED TIME = 0
+
+Original Layer poly DELETED -- LVHEAP = 2/5/67
+
+active = OR active
+------------------
+active (HIER TYP=1 CFG=1 HGC=6 FGC=6 HEC=24 FEC=24 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 8 OF 29  ELAPSED TIME = 0
+
+Original Layer active DELETED -- LVHEAP = 2/5/67
+
+pimplant = OR pimplant
+----------------------
+pimplant (HIER TYP=1 CFG=1 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 35/35/35  OPS COMPLETE = 9 OF 29  ELAPSED TIME = 0
+
+Original Layer pimplant DELETED -- LVHEAP = 2/5/67
+
+pdif = active AND pimplant
+--------------------------
+pdif (HIER TYP=1 CFG=0 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 10 OF 29  ELAPSED TIME = 0
+
+pgate = poly AND pdif
+---------------------
+pgate (HIER TYP=1 CFG=1 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 11 OF 29  ELAPSED TIME = 0
+
+psrcdrn = pdif NOT pgate
+------------------------
+psrcdrn (HIER TYP=1 CFG=3 HGC=4 FGC=4 HEC=16 FEC=16 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 12 OF 29  ELAPSED TIME = 0
+
+Layer pdif DELETED -- LVHEAP = 2/5/67
+
+nimplant = OR nimplant
+----------------------
+nimplant (HIER TYP=1 CFG=1 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 13 OF 29  ELAPSED TIME = 0
+
+Original Layer nimplant DELETED -- LVHEAP = 2/5/67
+
+ndif = active AND nimplant
+--------------------------
+ndif (HIER TYP=1 CFG=0 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 14 OF 29  ELAPSED TIME = 0
+
+ngate = poly AND ndif
+---------------------
+ngate (HIER TYP=1 CFG=1 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 15 OF 29  ELAPSED TIME = 0
+
+nsrcdrn = ndif NOT ngate
+------------------------
+nsrcdrn (HIER TYP=1 CFG=3 HGC=4 FGC=4 HEC=16 FEC=16 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 16 OF 29  ELAPSED TIME = 0
+
+Layer ndif DELETED -- LVHEAP = 2/5/67
+
+pwell = OR pwell
+----------------
+pwell (HIER TYP=1 CFG=3 HGC=1 FGC=1 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 17 OF 29  ELAPSED TIME = 0
+
+Original Layer pwell DELETED -- LVHEAP = 2/5/67
+
+pcont = psrcdrn AND pwell
+-------------------------
+pcont (HIER TYP=1 CFG=3 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 18 OF 29  ELAPSED TIME = 0
+
+bulk = EXTENT
+-------------
+bulk (HIER-LSL TYP=1 CFG=0 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 19 OF 29  ELAPSED TIME = 0
+
+TMP<1> = bulk NOT pwell
+-----------------------
+TMP<1> (HIER TYP=1 CFG=0 HGC=1 FGC=1 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 20 OF 29  ELAPSED TIME = 0
+
+Layer bulk DELETED -- LVHEAP = 2/5/67
+
+nwell = OR nwell
+----------------
+nwell (HIER TYP=1 CFG=0 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 21 OF 29  ELAPSED TIME = 0
+
+Original Layer nwell DELETED -- LVHEAP = 2/5/67
+
+nsub = TMP<1> AND nwell
+-----------------------
+nsub (HIER TYP=1 CFG=3 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 22 OF 29  ELAPSED TIME = 0
+
+Layer TMP<1> DELETED -- LVHEAP = 2/5/67
+
+Layer nwell DELETED -- LVHEAP = 2/5/67
+
+ncont = nsrcdrn AND nsub
+------------------------
+ncont (HIER TYP=1 CFG=3 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 23 OF 29  ELAPSED TIME = 0
+
+ntapcont = active NOT INTERACT pimplant
+---------------------------------------
+ntapcont (HIER TYP=1 CFG=0 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 24 OF 29  ELAPSED TIME = 0
+
+Layer pimplant DELETED -- LVHEAP = 2/5/67
+
+ncont1 = ntapcont AND nsub
+--------------------------
+ncont1 (HIER TYP=1 CFG=3 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 25 OF 29  ELAPSED TIME = 0
+
+Layer ntapcont DELETED -- LVHEAP = 2/5/67
+
+ptapcont = active NOT INTERACT nimplant
+---------------------------------------
+ptapcont (HIER TYP=1 CFG=0 HGC=3 FGC=3 HEC=12 FEC=12 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 26 OF 29  ELAPSED TIME = 0
+
+Layer active DELETED -- LVHEAP = 2/5/67
+
+Layer nimplant DELETED -- LVHEAP = 2/5/67
+
+pcont1 = ptapcont AND pwell
+---------------------------
+pcont1 (HIER TYP=1 CFG=3 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 27 OF 29  ELAPSED TIME = 0
+
+Layer ptapcont DELETED -- LVHEAP = 2/5/67
+
+active_contact = OR active_contact
+----------------------------------
+active_contact (HIER TYP=1 CFG=3 HGC=16 FGC=16 HEC=64 FEC=64 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 28 OF 29  ELAPSED TIME = 0
+
+Original Layer active_contact DELETED -- LVHEAP = 2/5/67
+
+poly_contact = OR poly_contact
+------------------------------
+poly_contact (HIER TYP=1 CFG=3 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  OPS COMPLETE = 29 OF 29  ELAPSED TIME = 0
+
+Original Layer poly_contact DELETED -- LVHEAP = 2/5/67
+
+CONNECTIVITY EXTRACTION TOTAL LAYER PREPARATION TIME:  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36 ELAPSED TIME = 0
+
+CONNECTIVITY EXTRACTION
+-----------------------
+NC = Net Count  IPC = Internal Pin Count
+CEC = Cell Edge Count  PEC = Promoted Edge Count
+LVHEAP = Geometry heap memory allocation.
+MALLOC = Total heap memory allocation.
+
+CELL inverter
+     inverter (NC=4 IPC=0 CEC=89 PEC=0 CFGC=40)
+     inverter  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 36/36/36 ELAPSED TIME = 0
+TOTAL CEC=89 PEC=0
+
+POST-PROCESSING CONNECTIVITY DATA STRUCTURE...
+    MARKING TRUE NETS AND EXTERNAL PINS...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+    DISCARDING FALSE VIRTUAL NETS, RESOLVING DEEP SHORTS AND PERFORMING VIRTUAL CONNECTIONS...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+    CREATING COMPACT PIN DATA STRUCTURE...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+    RESOLVING SHORT CIRCUIT TEXT...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+    PROCESSING HIGH SHORTS...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+    COMPUTING FINAL NET NAMES AND REPORTING TEXT WARNINGS...
+        CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+POST-PROCESSING completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36
+
+CONNECTIVITY EXTRACTION completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36 ELAPSED TIME = 0
+
+WRITING CELL INFORMATION to PHDB svdb
+PHDB CELL DATA WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 36/36/36  ELAPSED TIME = 0
+
+WRITING CONNECT INFORMATION to PHDB svdb
+PHDB CONNECT INFORMATION written. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 37/37/37  ELAPSED TIME = 0
+
+Layer via1 DELETED -- LVHEAP = 2/5/67
+
+Layer via2 DELETED -- LVHEAP = 2/5/67
+
+Layer metal2 DELETED -- LVHEAP = 2/5/67
+
+Layer metal3 DELETED -- LVHEAP = 2/5/67
+
+Layer pcont DELETED -- LVHEAP = 2/5/67
+
+Layer ncont DELETED -- LVHEAP = 2/5/67
+
+Layer ncont1 DELETED -- LVHEAP = 2/5/67
+
+Layer pcont1 DELETED -- LVHEAP = 2/5/67
+
+Layer active_contact DELETED -- LVHEAP = 2/5/67
+
+Layer contact DELETED -- LVHEAP = 2/5/67
+
+Layer poly_contact DELETED -- LVHEAP = 2/5/67
+
+Layer metal1 DELETED -- LVHEAP = 2/5/67
+
+DEVICE RECOGNITION
+------------------
+LVS PUSH DEVICES enabled.
+
+DEVICE RECOGNITION TOTAL LAYER PREPARATION TIME:  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67 ELAPSED TIME = 0
+
+DEVICE RECOGNITION PRECISE INTERACTION BEGINS.
+
+DEVICE RECOGNITION TOTAL PRECISE INTERACTION TIME:  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67 ELAPSED TIME = 0
+TENTATIVE SEED PROMOTIONS:   seed layer  seeds  cell : layers touched
+TENTATIVE SEED PROMOTIONS: ------------  -----  -----------------------------------------
+SEED PROMOTIONS: 
+SEED PROMOTIONS: ==============================================================
+SEED PROMOTIONS: 
+SEED PROMOTIONS:   seed layer  seeds  cell : layers touched
+SEED PROMOTIONS: ------------  -----  -----------------------------------------
+SEED PROMOTIONS: 
+SEED PROMOTIONS:       TOTAL:      0
+
+DEVICE RECOGNITION completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/67  MALLOC = 37/37/37 ELAPSED TIME = 0
+
+
+HIERARCHICAL SPICE NETLISTER
+----------------------------
+HIERARCHICAL SPICE NETLISTER completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 37/37/37 ELAPSED TIME = 0
+
+WRITING DEVICE INFORMATION to PHDB svdb
+PHDB DEVICE INFORMATION written. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 37/37/37  ELAPSED TIME = 0
+
+Layer pgate DELETED -- LVHEAP = 2/5/67
+
+Layer psrcdrn DELETED -- LVHEAP = 2/5/67
+
+Layer nsub DELETED -- LVHEAP = 2/5/67
+
+Layer ngate DELETED -- LVHEAP = 2/5/67
+
+Layer poly DELETED -- LVHEAP = 2/5/67
+
+Layer nsrcdrn DELETED -- LVHEAP = 2/5/67
+
+Layer pwell DELETED -- LVHEAP = 2/5/67
+
+WRITING PHDB to directory svdb
+PHDB WRITE completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38/38/38  ELAPSED TIME = 0
+
+--- CALIBRE::HIERARCHICAL CIRCUIT EXTRACTOR COMPLETED - Wed Oct 18 18:16:59 2017
+--- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/67  MALLOC = 38/38/38  ELAPSED TIME = 0
+--- PROCESSOR COUNT = 1
+
+--- SPICE NETLIST FILE = /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp
+--- CIRCUIT EXTRACTION REPORT FILE = inv.lvs.report.ext
+--- PERSISTENT HIERARCHICAL DATABASE(PHDB) = svdb/inverter.phdb
+--- QUERY DATABASE = svdb  TOP CELL = inverter
+
+
+
+
+
+                         ###################
+                         ###################
+                         ###################
+                         ###################
+                         ###################
+                         ###################
+                         ###################
+
+
+
+
+
+
+--- CALIBRE::LVS-H - Wed Oct 18 18:16:59 2017
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----               CALIBRE::LVS/xRC - INITIALIZATION MODULE               -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Performing global initialization ... 
+
+Initializing LVS ... 
+
+--- CALIBRE::LVS/xRC INITIALIZATION MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 40/40/40  ELAPSED TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                 CALIBRE::LVS/xRC - EXECUTIVE MODULE                  -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+LVS started ... 
+
+//  Licensed Products
+//  -----------------
+//  Base products running on 1 core:
+//  - LVS (Hierarchical)
+
+READING layout ...
+Layout READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+READING source ...
+Source READ.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+Identifying CORRESPONDING cells ...
+CORRESPONDING Cells Identified.  CPU TIME = 0  REAL TIME = 0
+
+Reallocating Instance Pins...
+Instance Pins Reallocated.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+Writing XDB Placement Hierarchy ...
+XDB Placement Hierarchy Written.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+Adding GLOBAL elements ...
+GLOBAL elements added.  CPU TIME = 0  REAL TIME = 0
+
+Resolving DEEP SHORTS ...
+DEEP SHORTS resolved.  CPU TIME = 0  REAL TIME = 0
+
+EXPANDING unbalanced cells ...
+Unbalanced cells EXPANDED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+Resolving HIGH SHORTS ...
+HIGH SHORTS resolved.  CPU TIME = 0  REAL TIME = 0
+
+Deleting TRIVIAL PINS ...
+TRIVIAL PINS deleted.  CPU TIME = 0  REAL TIME = 0
+
+FLATTENING and TRANSFORMING cells to comparison ready form ...
+
+Computing OPTIMAL TEMPLATE ORDER ...
+OPTIMAL TEMPLATE ORDER computed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+FLATTENING and TRANSFORMING to comparison ready form layout and source top level cells ...
+
+Reduce Series and Parallel Mosfets.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69
+
+Logic Injection.    CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69
+
+Reduce Series and Parallel Mosfets.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 67/69/69
+
+======================================================================================================================================================
+                              LVS HIERARCHICAL INJECTION STATISTICS
+===============================================================================================================================================================
+                Name  |   Found  | Inject |   Rej  |   Rej  |   Rej  |   Rej  |   Rej  |   Rej  |  Types |   Sub- |  Same  |    Properties 
+                      |          |        |  #pins |  suppl |  subst |  names |  ambig |  ident |        |  types |  path  |   unique/total 
+===============================================================================================================================================================
+                _invv |        2 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      2 |      0 |        1/       2 
+===============================================================================================================================================================
+Totals:
+Instances Injected 2
+Rejected as rare   0
+Instances Deleted  4
+Nets Deleted       0
+===============================================================================================================================================================
+
+Logic Injection.    CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69
+
+Cells FLATTENED and TRANSFORMED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69
+
+All cells FLATTENED and TRANSFORMED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 42/42/42
+
+COMPARING corresponding cells ...
+
+COMPARING layout and source top levels ...
+
+Assign Initial Net Ids.  CPU TIME = 0  REAL TIME = 0
+
+Assign Initial Net Ids.  CPU TIME = 0  REAL TIME = 0
+
+ANCHOR Points.  0 instances, 4 nets matched.  CPU TIME = 0  REAL TIME = 0
+
+Begin NBD ...
+NBD 2.  1 instances, 0 nets matched.  CPU TIME = 0  REAL TIME = 0
+
+      TOTAL:  1 instances,  4 nets  matched.  CPU TIME = 0  REAL TIME = 0
+
+STATUSES.  CPU TIME = 0  REAL TIME = 0
+
+COMPARISON completed.  CPU TIME = 0  REAL TIME = 0
+
+All corresponding cells COMPARED.  CPU TIME = 0  REAL TIME = 0
+
+Corresponding cells TRANSFORMED and COMPARED.  CPU TIME = 0  REAL TIME = 0
+
+Writing REPORT ...
+Writing CROSS REFERENCE files...
+CROSS REFERENCE files completed.  CPU TIME = 0  REAL TIME = 0
+REPORT written.  CPU TIME = 0  REAL TIME = 0
+
+Cumulative READING INPUTS Time:                          CPU =       0,     REAL =       0
+Cumulative IDENTIFYING CORRESPONDING CELLS Time:         CPU =       0,     REAL =       0
+    Cumulative CHECKING PORTS Time:                      CPU =       0,     REAL =       0
+Cumulative REALLOCATING PINS Time:                       CPU =       0,     REAL =       0
+Cumulative WRITING XDB HIERARCHY Time:                   CPU =       0,     REAL =       0
+Cumulative ADDING GLOBALS Time:                          CPU =       0,     REAL =       0
+Cumulative RESOLVING DEEP SHORTS Time:                   CPU =       0,     REAL =       0
+Cumulative RESOLVING HIGH SHORTS Time:                   CPU =       0,     REAL =       0
+Cumulative DELETING TRIVIAL PINS Time:                   CPU =       0,     REAL =       0
+Cumulative EXPANDING UNBALANCED CELLS Time:              CPU =       0,     REAL =       0
+Cumulative TRANSFORMS AND FLATTENING Time:               CPU =       0,     REAL =       0
+    Cumulative FLATTENING Time:                          CPU =       0,     REAL =       0
+    Cumulative TRANSFORMS Time:                          CPU =       0,     REAL =       0
+        Cumulative INJECTION Time:                       CPU =       0,     REAL =       0
+            Cumulative COMPACTION Time:                  CPU =       0,     REAL =       0
+        Cumulative REDUCTION Time:                       CPU =       0,     REAL =       0
+        Cumulative GATES Time:                           CPU =       0,     REAL =       0
+        Cumulative UNUSED Time:                          CPU =       0,     REAL =       0
+Cumulative COMPARISON Time:                              CPU =       0,     REAL =       0
+    Cumulative MERGE PRIMITIVE TEMPLATES Time:           CPU =       0,     REAL =       0
+    Cumulative MERGE SUBGRAPH TEMPLATES Time:            CPU =       0,     REAL =       0
+    Cumulative NBD AND AMBIGUITY Time:                   CPU =       0,     REAL =       0
+        Cumulative NBD Time:                             CPU =       0,     REAL =       0
+            Cumulative INITIAL NBD IDS Time:             CPU =       0,     REAL =       0
+            Cumulative NEW NBD CONVERT Time:             CPU =       0,     REAL =       0
+            Cumulative NEW NBD BACK CONVERT Time:        CPU =       0,     REAL =       0
+            Cumulative NEW NBD ALG RUN Time:             CPU =       0,     REAL =       0
+            Cumulative NEW NBD IDS Time:                 CPU =       0,     REAL =       0
+            Cumulative MATCH NBD NODES Time:             CPU =       0,     REAL =       0
+        Cumulative TPL Time:                             CPU =       0,     REAL =       0
+        Cumulative BIN Time:                             CPU =       0,     REAL =       0
+        Cumulative PRP Time:                             CPU =       0,     REAL =       0
+        Cumulative AMBIGUITY Time:                       CPU =       0,     REAL =       0
+            Cumulative AMBIGUITY BY PROPERTIES Time:     CPU =       0,     REAL =       0
+            Cumulative AMBIGUITY BY SUBTYPES Time:       CPU =       0,     REAL =       0
+            Cumulative AMBIGUITY HIERARCHICAL Time:      CPU =       0,     REAL =       0
+            Cumulative AMBIGUITY ARBITRARY Time:         CPU =       0,     REAL =       0
+    Cumulative REWIRE Time:                              CPU =       0,     REAL =       0
+    Cumulative REPAIR Time:                              CPU =       0,     REAL =       0
+Cumulative REPORT Time:                                  CPU =       0,     REAL =       0
+
+
+LVS completed. CORRECT. See report file: inv.lvs.report
+
+LVS completed.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 66/69/69  MALLOC = 43/43/43  ELAPSED TIME = 0
+
+--- LVS REPORT FILE = inv.lvs.report
+--- CALIBRE::LVS/xRC EXECUTIVE MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 43/43/43  ELAPSED TIME = 0
+
+--- CALIBRE::LVS/xRC COMPLETED - Wed Oct 18 18:16:59 2017
+--- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/69  MALLOC = 43/43/43  ELAPSED TIME = 0
+--- XDB CROSS REFERENCE DATABASE = svdb/inverter.xdb
+
+--- SPICE NETLIST FILE = /classes/ecen4303F17/project_F17/inv/calibre/./extracted.sp
+--- CIRCUIT EXTRACTION REPORT FILE = inv.lvs.report.ext
+--- PERSISTENT HIERARCHICAL DATABASE(PHDB) = svdb/inverter.phdb
+--- QUERY DATABASE = svdb  TOP CELL = inverter
+
+--- GRAND TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 1/5/69  MALLOC = 43/43/43  ELAPSED TIME = 0
+

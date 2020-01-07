@@ -1,0 +1,37 @@
+Starting magic under Tcl interpreter
+
+Magic 8.0 revision 209 - Compiled on Fri Sep 11 02:08:49 CDT 2015.
+Using the terminal as the console.
+Using NULL graphics device.
+Input style lambda=0.30(p): scaleFactor=30, multiplier=1
+/usr/local/lib/magic/sys/scmos.tech: line 6070: section drc:
+	OK types "space" in more than one plane.
+	Assuming same plane (active) as edge.
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Using technology "scmos", version 2000d.
+SCMOS: Submit as technology.lambda: SCN3ME_SUBM.30 [to process: AMIc5]
+Extended macros are unavailable with this device type.
+Processing system .magicrc file
+{}
+FreeSans
+FreeSerif
+FreeMono
+if {![catch {set Opts(tools)}]} { magic::enable_tools }
+: after#0
+set GND "gnd!"
+: gnd!
+set VDD "vdd!"
+: vdd!
+catch {source /usr/local/lib/magic/sys/site.def}
+: 1
+Extracting inverter into inverter.ext:
+exttosim finished.
+Devices merged: 0
+exttosim finished.
+Devs merged: 0
+exttospice finished.

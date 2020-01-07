@@ -1,0 +1,34 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_an {} {
+  make pmos -origin {320 250}
+  make pmos -orient RXY -origin {450 250}
+  make nmos -origin {380 420}
+  make nmos -origin {380 500}
+  make nmos -origin {630 400}
+  make pmos -origin {630 320}
+  make global -orient RXY -name vdd -origin {380 170}
+  make global -name gnd -origin {380 560}
+  make output -name Y -origin {630 360}
+  make input -name A -origin {260 250}
+  make input -orient RXY -name B -origin {510 250}
+  make input -name A -origin {320 420}
+  make input -name B -origin {320 500}
+  make_wire 380 290 320 290
+  make_wire 380 290 450 290
+  make_wire 380 320 380 380
+  make_wire 380 320 380 290
+  make_wire 570 400 480 400
+  make_wire 480 400 480 320
+  make_wire 480 320 570 320
+  make_wire 480 320 380 320
+  make_wire 630 280 630 170
+  make_wire 630 170 380 170
+  make_wire 380 170 380 210
+  make_wire 380 210 320 210
+  make_wire 380 210 450 210
+  make_wire 630 440 630 540
+  make_wire 630 540 380 540
+  make_wire 380 540 380 560
+}
+

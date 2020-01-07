@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1544203787 1544203787
+lvs_ExtOutFile RUNDIR /home/wchim/Desktop/project_final_submit/and/lvs
+lvs_ExtOutFile RULES_FILE /home/wchim/Desktop/project_final_submit/and/lvs/./_calibreLVS_scn3me_subm.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/wchim/Desktop/project_final_submit/and/lvs/./extracted.sp
+lvs_ExtOutFile EXTRACTION_REPORT an.lvs.report.ext

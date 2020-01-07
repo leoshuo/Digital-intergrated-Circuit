@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/wchim/Desktop/project_final_submit/and/lvs
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT an.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/wchim/Desktop/project_final_submit/and/lvs/./../sue/an.sp
+lvs_LvsOutFile RULES_FILE /home/wchim/Desktop/project_final_submit/and/lvs/./_calibreLVS_scn3me_subm.rul_
+lvs_LvsRunTimes 1544203787 1544203787

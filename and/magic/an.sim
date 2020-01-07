@@ -1,0 +1,18 @@
+| units: 30 tech: scmos format: MIT
+p A vdd a_n18_n59# 2 20 -13 -1
+p B a_n18_n59# vdd 2 20 -5 -1
+p a_n18_n59# vdd Z 2 20 3 -1
+n A a_n18_n59# a_n11_n59# 2 10 -13 -59
+n B a_n11_n59# gnd 2 10 -5 -59
+n a_n18_n59# gnd Z 2 10 3 -59
+C gnd GND 2.617200
+R gnd 1152
+R a_n11_n59# 137
+C Z GND 3.069000
+R Z 576
+C a_n18_n59# GND 5.215680
+R a_n18_n59# 1574
+R B 1065
+R A 1065
+C vdd GND 5.315041
+R vdd 2681

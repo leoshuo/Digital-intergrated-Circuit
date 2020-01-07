@@ -1,0 +1,9 @@
+set NETLIST_CACHE(an,cells) {{icon nmos /programs/micromagic/mmi/sue/schematics/mspice/nmos.sue {}} {icon pmos /programs/micromagic/mmi/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(an,globals) {vdd gnd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(an,version) MMI_SUE5.6.37
+set NETLIST_CACHE(an) {{.SUBCKT an A B Z } {M_1 net_1 A vdd vdd p W='6*1u' L='0.6*1u' } {M_2 vdd B net_1 vdd p W='6*1u' L='0.6*1u' } {M_3 net_1 A net_2 gnd n W='3*1u' L='0.6*1u' } {M_4 net_2 B gnd gnd n W='3*1u' L='0.6*1u' } {M_5 Z net_1 gnd gnd n W='3*1u' L='0.6*1u' } {M_6 Z net_1 vdd vdd p W='6*1u' L='0.6*1u' } {.ENDS	$ an} {}}
+set NETLIST_CACHE(an,names) {{380 500 {0 M_4}} {450 250 {0 M_2}} {320 210 {0 vdd}} {380 420 {0 M_3}} {320 250 {0 M_1}} {450 290 {0 net_1}} {380 540 {0 gnd}} {630 400 {0 M_5}} {380 460 {0 net_2} {1 net_2}} {630 320 {0 M_6}} {380 560 {1 gnd}} {380 380 {0 net_1}} {260 250 {0 A} {2 A}} {570 400 {0 net_1}} {320 290 {0 net_1}} {570 320 {0 net_1}} {630 440 {0 gnd}} {630 360 {0 Z} {1 Z} {3 Z}} {320 500 {0 B} {2 B}} {380 170 {1 vdd}} {630 280 {0 vdd}} {320 420 {0 A} {2 A}} {450 210 {0 vdd}} {510 250 {0 B} {2 B}}}
+set NETLIST_CACHE(an,wires) {{320 290 380 290 net_1} {380 290 450 290 net_1} {380 320 380 380 net_1} {380 290 380 320 net_1} {480 400 570 400 net_1} {480 320 480 400 net_1} {480 320 570 320 net_1} {380 320 480 320 net_1} {630 170 630 280 vdd} {380 170 630 170 vdd} {380 170 380 210 vdd} {320 210 380 210 vdd} {380 210 450 210 vdd} {630 440 630 540 gnd} {380 540 630 540 gnd} {380 540 380 560 gnd}}
